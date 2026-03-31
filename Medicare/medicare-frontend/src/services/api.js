@@ -1,10 +1,6 @@
 import axios from 'axios';
 
-<<<<<<< HEAD
 const API_BASE_URL = 'http://localhost:8082/api';
-=======
-const API_BASE_URL = 'https://ttdeployment-r2ah.onrender.com';
->>>>>>> cba160237d22c480cb8a3406b2d49019f21b8a68
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -15,20 +11,12 @@ const api = axios.create({
 
 // USER
 export const loginUser = async (data) => {
-<<<<<<< HEAD
   const res = await api.post('/users/login', data);
-=======
-  const res = await api.post('api/users/login', data);
->>>>>>> cba160237d22c480cb8a3406b2d49019f21b8a68
   return res.data;
 };
 
 export const registerUser = async (data) => {
-<<<<<<< HEAD
   const res = await api.post('/users/register', data);
-=======
-  const res = await api.post('api/users/register', data);
->>>>>>> cba160237d22c480cb8a3406b2d49019f21b8a68
   return res.data;
 };
 
